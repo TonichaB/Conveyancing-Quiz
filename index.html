@@ -8,13 +8,30 @@
     <title>Conveyancing Quiz</title>
   </head>
   <body>
-    <div>
-      <h1>Conveyancing Quiz!</h1>
-      <h2>Test Your Knowledge...</h2>
-      <button>Leaderboard</button>
-      <button>Sign Up/Log In to Play</button>
-      <button>How to Play?</button>
-    </div>
+    <header>
+      <div>
+        <h1>Conveyancing Quiz!</h1>
+        <h2>Test Your Knowledge...</h2>
+      </div>
+      <!-- Buttons to open relevant pop-ups -->
+      <div class="flex-wrap">
+        <button class="button" id="leaderboard-btn">Leaderboard</button>
+        <button class="button" id="form-btn">Sign Up/Log In to Play</button>
+        <button class="button" id="how-to-play-btn">How to Play?</button>
+      </div>
+      <div class="outer-container">
+        <!-- Leaderboard Pop-Up -->
+        <div class="container" id="leaderboard">
+          <ul id="score-list"></ul>
+        </div>
+        <!-- Sign Up/Log In Pop-Up -->
+        <div class="container" id="register-form"></div>
+        <!-- How to Play Pop-Up -->
+        <div class="container" id="how-to-play"></div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
