@@ -16,16 +16,60 @@
       <!-- Buttons to open relevant pop-ups -->
       <div class="flex-wrap">
         <button class="button" id="leaderboard-btn">Leaderboard</button>
-        <button class="button" id="form-btn">Sign Up/Log In to Play</button>
+        <button class="button" id="form-btn">Register to Play</button>
         <button class="button" id="how-to-play-btn">How to Play?</button>
       </div>
       <div class="outer-container">
         <!-- Leaderboard Pop-Up -->
         <div class="container" id="leaderboard">
+          <button
+            class="close-button"
+            id="leaderboard-btn"
+            aria-label="Close button to close leaderboard pop-up"
+          >
+            X
+          </button>
+          <h3>Leaderboard!</h3>
           <ul id="score-list"></ul>
         </div>
-        <!-- Sign Up/Log In Pop-Up -->
-        <div class="container" id="register-form"></div>
+        <!-- Register to Play Pop-Up -->
+        <div class="container" id="register-form">
+          <button
+            class="close-button"
+            id="register-btn"
+            aria-label="Close button to close Registration pop-up"
+          >
+            X
+          </button>
+          <h3>Register to Play!</h3>
+          <div id="email-input" class="inputs-style">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+          <div id="username-input">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+          <button
+            class="start-button"
+            id="start-btn"
+            aria-label="Click here to start the quiz"
+          >
+            Start Quiz!
+          </button>
+        </div>
         <!-- How to Play Pop-Up -->
         <div class="container" id="how-to-play">
           <button
@@ -37,7 +81,7 @@
           </button>
           <ol class="how-to-play-ol">
             <h3>How to Play!</h3>
-            <li><p>Sign Up/Log In to start the Quiz.</p></li>
+            <li><p>Register your details to start the Quiz.</p></li>
             <li>
               <p>
                 All questions are multiple choice, with 4 possible answers
